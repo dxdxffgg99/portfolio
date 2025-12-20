@@ -5,6 +5,7 @@ export default function Projects(){
         <>
             <section className="projects">
                 <h5>Projects</h5>
+                <p></p>
             </section>
         </>
     )

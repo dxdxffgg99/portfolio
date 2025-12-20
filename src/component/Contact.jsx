@@ -5,6 +5,7 @@ export default function Contact(){
         <>
             <section className="contact">
                 <h5>Contact</h5>
+                <p></p>
             </section>
         </>
     )
