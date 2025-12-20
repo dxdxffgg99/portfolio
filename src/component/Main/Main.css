@@ -1,0 +1,72 @@
+main{
+    width: 75vw;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    left: 12.5vw;
+    text-align: center;
+}
+main h2{
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 32px;
+}
+main h3{
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+.container{
+    width: 350px;
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.08);
+}
+.container > div > h4{
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 30px;
+}
+.LcpStaff{
+    transform: translateX(15px);
+}
+.StackGridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+@media screen and (max-width: 767px){
+    .StackGridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main h2{
+        position: absolute;
+        top: 125px;
+        
+    }main h3{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-55%);
+    }
+    .StackGridContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+}

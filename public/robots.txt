@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /*.png$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.ico$
+Sitemap: https://dxdxffg.com/sitemap.xml
