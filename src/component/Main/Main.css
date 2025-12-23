@@ -1,6 +1,6 @@
 main{
     width: 75vw;
-    height: 100vh;
+    height: calc(100vh - 16px);
     color: #fff;
     position: relative;
     z-index: 2;

@@ -22,6 +22,3 @@ function App() {
 }
 
 export default App
-
-//using ReactBits
-//https://reactbits.dev/
