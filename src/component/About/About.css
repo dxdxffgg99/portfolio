@@ -1,9 +1,6 @@
 .About {
   position: relative;
   overflow: hidden;
-
-  min-height: 45vh;
-
   display: flex;
   align-items: flex-start;
   justify-content: center;
