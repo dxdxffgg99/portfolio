@@ -169,3 +169,34 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 520px) {
+  .card-nav-container {
+    top: 0.9em;
+  }
+
+  .card-nav {
+    border-width: 2px;
+  }
+
+  .hamburger-line {
+    width: 24px;
+  }
+
+  .logo-container {
+    font-size: 1.15em;
+  }
+
+  .card-nav-content {
+    gap: 6px;
+    padding: 0.4rem;
+  }
+
+  .nav-card {
+    padding: 10px 12px;
+  }
+
+  .nav-card-label {
+    font-size: 16px;
+  }
+}

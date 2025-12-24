@@ -14,3 +14,15 @@
 .aurora-container > canvas {
   z-index: 0;
 }
+
+@media (max-width: 768px) {
+  .aurorabg{
+    height: 60%;
+  }
+}
+
+@media (max-width: 520px) {
+  .aurorabg{
+    height: 50%;
+  }
+}

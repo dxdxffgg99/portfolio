@@ -15,7 +15,6 @@
   margin: 0 auto;
 }
 
-
 .about__card {
   position: relative;
   border-radius: 0;
@@ -27,7 +26,6 @@
   -webkit-backdrop-filter: none;
   z-index: 99;
 }
-
 
 @supports not ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
   .about__card {
@@ -175,7 +173,7 @@
 }
 
 @media (max-width: 720px) {
-  .about {
+  .About {
     padding: clamp(72px, 10vh, 96px) 14px;
   }
 
@@ -186,6 +184,37 @@
 
   .about__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about__badge {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .about__card {
+    padding: 18px 14px;
+  }
+
+  .about__badge {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .about__grid {
+    gap: 10px;
+  }
+
+  .about__chip {
+    padding: 6px 10px;
+    font-size: 12px;
   }
 }
 
