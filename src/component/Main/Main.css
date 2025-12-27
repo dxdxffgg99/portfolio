@@ -1,6 +1,6 @@
 main{
     width: 75vw;
-    height: 100vh;
+    height: calc(100vh - 16px);
     color: #fff;
     position: relative;
     z-index: 2;
@@ -46,6 +46,34 @@ main h3{
 }
 
 @media screen and (max-width: 767px){
+    main{
+        width: 100%;
+        left: 0;
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 16px 48px;
+        box-sizing: border-box;
+    }
+    main h2,
+    main h3{
+        position: static;
+        transform: none;
+    }
+    main h2{
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+    .container{
+        position: static;
+        transform: none;
+        width: min(360px, 90vw);
+        margin: 28px auto 0;
+        padding: 40px 28px;
+    }
+    .container > div > h4{
+        bottom: 0;
+        margin-bottom: 16px;
+    }
     .StackGridContainer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -54,19 +82,22 @@ main h3{
 }
 
 @media screen and (max-width: 500px){
+    main{
+        padding: 108px 14px 40px;
+    }
     main h2{
-        position: absolute;
-        top: 125px;
-        
-    }main h3{
-        position: absolute;
-        top: 150px;
-        left: 50%;
-        transform: translateX(-55%);
+        font-size: 24px;
+    }
+    main h3{
+        font-size: 14px;
+    }
+    .container{
+        width: min(320px, 92vw);
+        padding: 30px 22px;
     }
     .StackGridContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
+        gap: 8px;
     }
 }

@@ -7,6 +7,7 @@
   max-width: 800px;
   z-index: 99;
   box-sizing: border-box;
+  z-index: 99999;
 }
 
 .card-nav {
@@ -20,8 +21,8 @@
   position: relative;
   overflow: hidden;
   will-change: height;
-  backdrop-filter: blur(1.5px);
-  z-index: 99999;
+  backdrop-filter: blur(2.5px);
+  z-index: 999999;
 }
 
 .card-nav-top {
@@ -34,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0.45rem 0.55rem 1.1rem;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .hamburger-menu {
@@ -166,5 +167,36 @@
 
   .nav-card-link {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-nav-container {
+    top: 0.9em;
+  }
+
+  .card-nav {
+    border-width: 2px;
+  }
+
+  .hamburger-line {
+    width: 24px;
+  }
+
+  .logo-container {
+    font-size: 1.15em;
+  }
+
+  .card-nav-content {
+    gap: 6px;
+    padding: 0.4rem;
+  }
+
+  .nav-card {
+    padding: 10px 12px;
+  }
+
+  .nav-card-label {
+    font-size: 16px;
   }
 }
