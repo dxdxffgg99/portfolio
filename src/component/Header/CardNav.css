@@ -135,12 +135,6 @@
     order: 1;
   }
 
-  .logo-container {
-    position: static;
-    transform: translate(0, -25%);
-    order: 1;
-  }
-
   .card-nav-cta-button {
     display: none;
   }
@@ -201,7 +195,6 @@
   }
 }
 
-/* Accessibility: keyboard focus styles */
 .hamburger-menu:focus-visible {
   outline: 3px solid rgba(255,255,255,0.12);
   border-radius: 6px;
@@ -213,7 +206,6 @@
   box-shadow: 0 0 0 3px rgba(255,255,255,0.02);
 }
 
-/* Compact tweaks for very small screens */
 @media (max-width: 360px) {
   .card-nav { height: 52px; border-radius: 0.6rem; }
   .card-nav-top { padding: 0.3rem 0.5rem 0.35rem 0.8rem; }
@@ -223,7 +215,3 @@
   .nav-card { min-height: 48px; padding: 8px 10px; }
   .card-nav-container { top: 0.6em; width: 96%; }
 }
-
-/* Smooth small transitions */
-.card-nav { transition: border-width 0.12s ease, box-shadow 0.12s ease; }
-.card-nav-top { transition: padding 0.12s ease; }

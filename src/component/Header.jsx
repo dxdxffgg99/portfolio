@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <CardNav
       items={items}
-      ease="power3.out"
+      ease="expo.out"
     />
   );
 };
