@@ -200,3 +200,30 @@
     font-size: 16px;
   }
 }
+
+/* Accessibility: keyboard focus styles */
+.hamburger-menu:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+}
+.hamburger-menu { outline: none; }
+.nav-card:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.02);
+}
+
+/* Compact tweaks for very small screens */
+@media (max-width: 360px) {
+  .card-nav { height: 52px; border-radius: 0.6rem; }
+  .card-nav-top { padding: 0.3rem 0.5rem 0.35rem 0.8rem; }
+  .hamburger-line { width: 20px; height: 2px; }
+  .logo-container { font-size: 1em; transform: translate(0, -20%); }
+  .nav-card-label { font-size: 14px; }
+  .nav-card { min-height: 48px; padding: 8px 10px; }
+  .card-nav-container { top: 0.6em; width: 96%; }
+}
+
+/* Smooth small transitions */
+.card-nav { transition: border-width 0.12s ease, box-shadow 0.12s ease; }
+.card-nav-top { transition: padding 0.12s ease; }

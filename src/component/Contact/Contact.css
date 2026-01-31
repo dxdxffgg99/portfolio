@@ -56,8 +56,9 @@
   border-radius: 18px;
   padding: 14px 14px;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
   display: flex;
   flex-direction: column;

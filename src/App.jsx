@@ -6,6 +6,7 @@ import Main from './component/Main'
 import About from './component/About'
 import Projects from './component/Projects'
 import Contact from './component/Contact'
+import Footer from './component/Footer'
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </ClickSpark>
     </>
   );

@@ -9,10 +9,6 @@ export default function About() {
             <div>
               <h5 className="about__title">About</h5>
             </div>
-            <div className='about__text'>
-              <p>안녕하세요, 프론트부터 서버까지 직접 만지는 광기의 개발자입니다.</p>
-              <p>병목을 찾고 지우는 걸 좋아해서, 렌더링·번들·네트워크까지 끝까지 파고듭니다.</p>
-            </div>
             <div className="about__badge">
               <span className="about__dot" />
               Available

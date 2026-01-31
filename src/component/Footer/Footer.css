@@ -1,0 +1,116 @@
+.footer {
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  background-color: #080B0F;
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer__text {
+  color: rgba(255,255,255,0.72);
+  margin: 0;
+  font-size: 0.95rem;
+  word-break: keep-all;
+}
+
+.footer__text a {
+  color: rgba(255,255,255,0.92);
+  text-decoration: underline;
+}
+
+@media (max-width: 720px){
+  .footer { padding: 1.5rem 0; }
+  .footer__text { font-size: 0.92rem; }
+}
+
+@media (max-width: 480px){
+  .footer { padding: 1rem 0; }
+  .footer__text { font-size: 0.85rem; }
+}
+
+@media (max-width: 360px){
+  .footer { padding: 0.8rem 0; }
+  .footer__text { font-size: 0.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .footer { transition: none; }
+}
+
+.footer--sticky {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Social icons and footer nav */
+.footer__social {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem 0 0.4rem 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__social a {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  border-radius: 6px;
+  transition: background 0.12s ease, transform 0.12s ease;
+}
+.footer__social a:hover,
+.footer__social a:focus {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-2px);
+  outline: none;
+}
+.footer__social svg { display:block; }
+
+.footer__nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.footer__nav a {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.9rem;
+}
+.footer__nav a:hover,
+.footer__nav a:focus { color: rgba(255,255,255,0.95); text-decoration: underline; }
+
+/* Stack content on small screens */
+@media (max-width: 520px){
+  .footer__inner { flex-direction: column; gap: 0.5rem; }
+  .footer__text { font-size: 0.88rem; }
+  .footer__nav { gap: 0.75rem; }
+}
+
+/* Small helper for screen-reader only text */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

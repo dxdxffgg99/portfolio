@@ -33,12 +33,6 @@
   }
 }
 
-.about__text{
-  color: #fff;
-  position: relative;
-  top: 5px;
-}
-
 .about__top {
   display: flex;
   align-items: flex-start;
